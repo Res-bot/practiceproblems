@@ -7,6 +7,7 @@ public class day4 {
         String str = "RESHMA IS A GOOD GIRL";
         char[] ch =  str.toCharArray();
         int len = ch.length;
+        // System.out.println(len);
 
         for(int i = 0; i<len ; i++){
 
@@ -19,7 +20,7 @@ public class day4 {
         }
         System.out.println();
 
-        //program to move all the zeros of the array to the left
+        // program to move all the zeros of the array to the left
         int[] arr1 = {0,0,1,0,0,2,0,0,3,0,0,4,0,0,5};
         int arcap = arr1.length;
 
