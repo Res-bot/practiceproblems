@@ -38,17 +38,43 @@ public class day7 {
         }
         System.out.println(count1);
 
-        //121324
-        int arr3[] = {1,2,1,3,2,4};
-        int store = 1;
-        for(int k =0; k<arr3.length; k++){
-            if(arr3[k] > store){
-                continue;
+        //program to rotate an array
+        int[] arr3 = {5,6,7,8,9};
+        int ele = arr3[0];
+        int lnth = arr3.length;
+        System.out.println("Array before rotation: ");
+        for(int i=0; i<lnth; i++){
+            System.out.print(arr3[i]);
+        }
+        System.out.println();
+        for(int i=0; i<lnth-1; i++){
+            arr3[i] = arr3[i+1];
+        }
+        arr3[lnth-1] = ele;
+
+        System.out.println("Array after rotation: ");
+        for(int i=0; i<lnth; i++){
+            System.out.print(arr3[i]);
+        }
+        System.out.println();
+
+        //program to turn the uppercase characters to lowercase and the lowercase characters to uppercase
+
+        String str = "ThiRuVANantHApURAm";
+        char[] strch = str.toCharArray();
+
+        for(int i=0; i<strch.length ; i++){
+            if(strch[i] >= 'A' && strch[i]<='Z'){
+                strch[i] = Character.toLowerCase(strch[i]);
             }
             else{
-                System.out.println("The smallest element is: " + arr3[k]);
+                strch[i] = Character.toUpperCase(strch[i]);
             }
         }
+        System.out.println(strch);
+
+        
+
     }
     
 }
