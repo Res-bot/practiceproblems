@@ -1,7 +1,9 @@
 public class day4 {
     public static void main(String[] args) {
 
-         //if the string is "RESHMA" then return the string which will have ascii value the length value more than the alphabet in the string.
+        
+
+        //if the string is "RESHMA" then return the string which will have ascii value the length value more than the alphabet in the string.
 
 
         String str = "RESHMA IS A GOOD GIRL";
